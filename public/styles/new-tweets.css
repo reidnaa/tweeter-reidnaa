@@ -29,8 +29,6 @@ article {
     border: 1px solid #ccc;
 }
 
-article:hover{ opacity:1;}
-
 article p {padding:10px;}
 
 .icons{
@@ -38,9 +36,6 @@ article p {padding:10px;}
   opacity: 0 ;
 }
 
-.icons:hover{
-  opacity: 1 ;
-}
 
 i { color:#63c6b8;
     padding: 4px;
