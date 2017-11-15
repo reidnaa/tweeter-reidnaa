@@ -10,8 +10,23 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
+    <!-- nav.css link -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <!-- link to new-tweets.css -->
+    <link rel="stylesheet" href="/styles/new-tweets.css" type="text/css" />
+
+    <!-- Roboto condensed font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+
+    <!-- icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- external js file composer-char-counter.js -->
+       <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
@@ -21,12 +36,40 @@
 
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
-      <img class="logo" src="/images/bird.png" width="80px" height="80px">
+      <img class="logo" src="/images/bird.png" >
       <span class="header">Tweeter</span>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form method="POST" action="/tweets/">
+          <textarea name="text" class="text-input" placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
+  <article class="hov">
+    <header>
+        <img class="avatar" src="/images/tweeter.png" alt="tweeter avatar"/>
+        <h3>user name</h3>
+
+        <span>@name</span>
+
+    </header>
+      <p> This is the most important decision you've made in your lives. Now go over by the trampoline and talk it through. Everybody wants to know what's next. May I enjoy this moment? I wonder if the three of us would've been friends in real life. Not as brothers, but as people. I love you, but you don't know what you're talking about. You can say that about most anything, 'it depends'. Of course it depends. Are you finding what you were looking for... out here with me? I hope so. I want to go on adventures, I think. Not get stuck in one place. When the time comes, these will be yours. Along with whatever we haven't already spent on whores and whiskey. I always wished I was an orphan, most of my favourite characters are. Let me know about my boat. You're not getting Boy with Apple, you goddamn little fruit! I know what you do with that sad, dumb policeman. Hell of a damn grave. Wish it were mine. I love you, but you don't know what you're talking about. I love you, but you don't know what you're talking about.</p>
+      <footer>
+          <span>dec 11 2017</span>
+      <div class="icons hov">
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-retweet"></i>
+        <i class="fa fa-flag"></i>
+      </div>
+      </footer>
+</article>
+
     </main>
 
   </body>
