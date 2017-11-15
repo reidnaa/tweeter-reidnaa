@@ -66,7 +66,7 @@ var header = $('<header>')
        .append(`<img class="avatar" src="${tweetData.user.avatars.regular}">`)
        .append(`<h3 class="username">${tweetData.user.name}</h2>`)
        .append(`<span>${tweetData.user.handle}</span>`);
-var paragr = $(`<p>${tweetData.content.text}</p>`);
+var paragr = $(`<p>`).text(`${tweetData.content.text}`);
 var icons = $('<div>')
             .append('<i class="fa fa-heart">')
             .append('<i class="fa fa-retweet">')
