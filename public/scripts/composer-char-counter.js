@@ -20,20 +20,6 @@ if (characters > maxChar){
 
   });
 
-var hov = $('.article');
-var icon = $('.icons');
- hov.mouseenter(function(){
-  hov.css('opacity', 1 );
-  icon.css('opacity' , 1);
-});
-
-
-hov.mouseleave(function(){
-  hov.css('opacity', .7 );
-  icon.css('opacity', 0);
-});
-
-
 
 
 

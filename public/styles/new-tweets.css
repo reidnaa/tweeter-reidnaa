@@ -23,6 +23,7 @@
 .go-red{color:red;}
 
 article {
+    margin-top: 20px;
     border-radius: 10px;
     z-index: 1;
     opacity: .7;
@@ -31,7 +32,7 @@ article {
 
 article p {padding:10px;}
 
-.icons{
+article div{
   float:right;
   opacity: 0 ;
 }
