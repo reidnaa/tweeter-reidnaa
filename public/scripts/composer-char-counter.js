@@ -14,6 +14,7 @@ $( document ).ready(function() {
 
 if (characters > maxChar){
       counter.addClass('go-red');
+
 } else {
   counter.removeClass('go-red');
 }

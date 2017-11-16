@@ -32,9 +32,19 @@ article {
 
 article p {padding:10px;}
 
-article div{
+.icons{
   float:right;
-  opacity: 0 ;
+  display:none ;
+}
+
+
+article:hover  {
+  opacity: 1 ;
+
+}
+
+ article:hover  .icons {
+   display : block ;
 }
 
 
