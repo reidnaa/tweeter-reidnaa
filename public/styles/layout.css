@@ -14,11 +14,11 @@ html {
  * Global layout stuff
  */
 
-body {
+#body {
   margin: 0;
   color: #244751;
-  background-color: #eceded !important; /* added to override bootstrap*/
-  font-family: 'Roboto Condensed', sans-serif !important;/* added to override bootstrap*/
+  background-color: #eceded ; /* added to override bootstrap*/
+  font-family: 'Roboto Condensed', sans-serif ;/* added to override bootstrap*/
 
 }
 
