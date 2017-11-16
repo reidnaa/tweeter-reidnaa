@@ -1,6 +1,6 @@
 
 $( document ).ready(function() {
-    console.log( "ready!" );
+  console.log( "ready!" );
 
 
 
@@ -46,30 +46,35 @@ function submitTweets(){
   event.preventDefault();
 
   const $form = $('.text-input');
-if ($form.serialize().length <= 5) {
-  alert(' Please add some content to your post');
-  return;
-} else if ($form.serialize().length > 140){
-  alert('Sorry but your post has too many characters.');
-  return;
-}
-   $.ajax({
-      method: 'post',
-      url:  '/tweets',
-      data: $form.serialize()
-
-    })
+  if ($form.serialize().length <= 5) {
+    alert(' Please add some content to your post');
+    return;
+  } else if ($form.serialize().length > 140){
+    alert('Sorry but your post has too many characters.');
+    return;
+  }
+  $.ajax({
+    method: 'post',
+    url:  '/tweets',
+    data: $form.serialize()
+  })
 
    .then( function(tweets){
-        loadTweets(tweets);
-        $form.val('');
-        $('.counter').text(140);
+      loadTweets(tweets);
+      $form.val('');
+      $('.counter').text(140);
       });
 
-     })
+    })
 
 }
 
 submitTweets();
 
+$( ".compose" ).on('click', function() {
+  $( ".new-tweet" ).slideToggle( "slow" ,function(event){
+      $('.text-input').focus();
   });
+});
+
+});

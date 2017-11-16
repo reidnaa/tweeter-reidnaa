@@ -1,12 +1,12 @@
 #nav-bar {
-    background-color: #47a289;
-    position: fixed;
-    height: 80px;
-    color: #e8fdff;
-    top: 0px;
-    padding: 0 2em;
-    width:100vw;
-    z-index: 100;
+  background-color: #47a289;
+  position: fixed;
+   height: 80px;
+  color: #e8fdff;
+  top: 0px;
+  padding: 0 2em;
+  width:100vw;
+  z-index: 100;
 }
 
 #nav-bar .logo{
@@ -15,7 +15,26 @@
 }
 
 #nav-bar .header {
-    font-size: 2em;
-    position: relative;
-    top: -28px;
+  font-size: 2em;
+  position: relative;
+}
+
+.compose{
+  float:right;
+  padding:20px 10px;
+  border-radius: 10px;
+  margin:10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  border:1px solid black;
+  background-color: #e8fdfe;
+  color:#54b39f;
+}
+
+.compose:hover{
+  color:black;
+  background-color: #e4e4e4;
+ }
+
+.compose span{
+  margin-right:4px;
 }

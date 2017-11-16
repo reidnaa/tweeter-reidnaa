@@ -1,36 +1,39 @@
 .new-tweet {
-    background-color: #ddd;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
 
 .new-tweet h2 {
-    margin-top: 0;
-    border-bottom: 2px solid #347362;
-  }
+  margin-top: 0;
+  border-bottom: 2px solid #347362;
+}
 
 .new-tweet textarea {
-    width: 100%;
-    padding: 5px;
+  width: 100%;
+  padding: 5px;
 }
 
 .counter{
   float:right;
 }
 
-.go-red{color:red;}
-
-article {
-    margin-top: 20px;
-    border-radius: 10px;
-    z-index: 1;
-    opacity: .7;
-    border: 1px solid #ccc;
+.go-red{
+  color:red;
 }
 
-article p {padding:10px;}
+article {
+  margin-top: 20px;
+  border-radius: 10px;
+  z-index: 1;
+  opacity: .7;
+  border: 1px solid #ccc;
+}
+
+article p {
+  padding: 10px ;
+}
 
 .icons{
   float:right;
@@ -43,39 +46,42 @@ article:hover  {
 
 }
 
- article:hover  .icons {
-   display : block ;
+article:hover  .icons {
+  display : block ;
 }
 
 
-i { color:#63c6b8;
-    padding: 4px;
+i {
+  color:#63c6b8;
+  padding: 4px;
 }
 
 header {
-    padding: 10px;
-    background: #ddd;
-    border-radius: 10px 10px 0 0;
+  padding: 10px;
+  background: #ddd;
+  border-radius: 10px 10px 0 0;
 }
 
 .avatar{
-    width: 90px;
-    height: 90px;
+  width: 90px;
+  height: 90px;
 }
 
 
 header h3 {
-    display: inline-block;
-    margin-top: 0;
-    vertical-align: top;
-    padding-left: 5px;
-    font-size: 25px;
-    text-transform: capitalize;
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: top;
+  padding-left: 5px;
+  font-size: 25px;
+  text-transform: capitalize;
 }
 
-header span{ float:right;}
+header span{
+  float: right ;
+}
 
 article footer{
-    padding: 10px;
-    border-top: 1px solid #eee;
+  padding: 10px;
+  border-top: 1px solid #eee;
 }

@@ -12,12 +12,11 @@ $( document ).ready(function() {
     var characters = $(this).val().length ;
      counter.text(maxChar - characters );
 
-if (characters > maxChar){
+    if (characters > maxChar){
       counter.addClass('go-red');
-
-} else {
-  counter.removeClass('go-red');
-}
+    } else {
+      counter.removeClass('go-red');
+    }
 
   });
 
