@@ -3,18 +3,18 @@
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #ccc;
-}
 
-.new-tweet h2 {
-  margin-top: 0;
-  border-bottom: 2px solid #347362;
-}
 
-.new-tweet textarea {
-  width: 100%;
-  padding: 5px;
-}
+  h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #347362;
+  }
 
+   textarea {
+    width: 100%;
+    padding: 5px;
+  }
+}
 .counter{
   float:right;
 }
@@ -29,21 +29,35 @@ article {
   z-index: 1;
   opacity: .7;
   border: 1px solid #ccc;
+
+  p {
+    padding: 10px ;
+  }
+  &:hover{
+    opacity: 1 ;
+  }
+
+  footer{
+  padding: 10px;
+  border-top: 1px solid #eee;
+
+
+    i {
+      color:#63c6b8;
+      padding: 4px;
+    }
+
+
+  }
+
+
 }
 
-article p {
-  padding: 10px ;
-}
+
 
 .icons{
   float:right;
   display:none ;
-}
-
-
-article:hover  {
-  opacity: 1 ;
-
 }
 
 article:hover  .icons {
@@ -51,15 +65,26 @@ article:hover  .icons {
 }
 
 
-i {
-  color:#63c6b8;
-  padding: 4px;
-}
 
 header {
   padding: 10px;
   background: #ddd;
   border-radius: 10px 10px 0 0;
+
+
+  h3 {
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: top;
+  padding-left: 5px;
+  font-size: 25px;
+  text-transform: capitalize;
+  }
+
+
+  span{
+  float: right ;
+  }
 }
 
 .avatar{
@@ -68,20 +93,4 @@ header {
 }
 
 
-header h3 {
-  display: inline-block;
-  margin-top: 0;
-  vertical-align: top;
-  padding-left: 5px;
-  font-size: 25px;
-  text-transform: capitalize;
-}
 
-header span{
-  float: right ;
-}
-
-article footer{
-  padding: 10px;
-  border-top: 1px solid #eee;
-}
